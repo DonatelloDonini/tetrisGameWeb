@@ -1,0 +1,69 @@
+:root{
+    --background: #FFFFFF;
+    --container: #F7CB15;
+    --text: #878E88;
+    --accent: #F55D3E;
+    --shadows: #76BED0;
+}
+
+@font-face {
+    font-family: "titles";
+    src:
+        url("fonts/CutiveMono-Regular.woff") format("woff"),
+        url("fonts/CutiveMono-Regular.woff2") format("woff2");
+}
+  
+*{
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+h1{
+    --intestationHeight: 100px;
+    font-family: "titles";
+    background-color: var(--container);
+    height: var(--intestationHeight);
+    color: var(--accent);
+    text-align: center;
+    line-height: var(--intestationHeight);
+    white-space: nowrap;
+}
+
+#gamePlay{
+    margin: 5vh auto;
+}
+
+table{
+    background-color: var(--accent);
+    height: 80vh;
+    width: 40vh;
+    border-collapse: collapse;
+}
+
+td{
+    background-color: var(--accent);
+    /* border: 1px solid black; */
+}
+
+#gameOverPanel{
+    --gameOverPanelHeight:  min(80vh, 300px);
+    background-color: var(--accent);
+    width: min(80vh, 400px);
+    height: var(--gameOverPanelHeight);
+    color: white;
+    font-family: "titles";
+    font-size: 3rem;
+    text-align: center;
+    line-height: var(--gameOverPanelHeight);
+}
